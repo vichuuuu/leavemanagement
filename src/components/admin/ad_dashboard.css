@@ -1,0 +1,51 @@
+body{
+    background:white
+}
+.sidebar{
+    height: 750px;
+    width:224px;
+    border-style:groove;
+    margin-left: 1%;
+    border-color: blue;
+}
+.btn1{
+    border-radius: 8rem;
+    margin-top: 2%;
+    width: 150px;
+    border-color: brown;
+}
+.btn2{
+    border-radius: 8rem;
+    margin-top: 4%;
+    width: 150px;
+    border-color: brown;
+}
+.btn3{
+    border-radius: 8rem;
+    margin-top: 6%;
+    width: 150px;
+    border-color: brown;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+h6{
+    color: white;
+    margin-right: 6%;
+}
+
+#add-btn{
+    border-radius: 2rem;
+    margin-top: 7%;
+    width: 120px;
+    border-color: brown;
+}
+input{
+    border-style:solid;
+    border-color: brown;
+}
+h4{
+    margin-top: 20%;
+    color: blue;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
+import Add_dept from './components/Add_dept';
+
+import Admin_dashboard from './components/admin/Admin_dashboard';
+import Admin_login from './components/Admin_login';
+import Emp_dahboard from './components/employee/Emp_dahboard';
+import Leaveform from './components/employee/Leaveform';
+import Employee_login from './components/Employee_login';
+import Homepage from './components/Homepage';
+import Useradd from './components/Useradd';
+// import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Navbar/> */}
+     <Router>
+     <Routes>
+     <Route path="/" element={<Homepage />} />
+     <Route path="/admin_login" element={<Admin_login />} />
+     <Route path="/emp_login" element={<Employee_login />} />
+     <Route path="/dashboard" element={<Admin_dashboard />} />
+     <Route path="/user" element={<Useradd />} />
+     <Route path="/empdashboard" element={<Emp_dahboard/>} />
+     <Route path="/ad_dept" element={<Add_dept/>} />
+     <Route path="/leaveform" element={<Leaveform/>} />
+   
+   
+     </Routes>
+     </Router>
     </div>
   );
 }

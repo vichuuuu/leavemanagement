@@ -1,0 +1,24 @@
+.box1{
+    background-image: url("../assets/homebg.jpg");
+    height:900px;
+    background-size: cover;
+}
+.box2{
+    height: 250px;
+    width: 250px;
+    
+    margin-left: 37%;
+    margin-top: 10%;
+}
+#btn1{
+    margin-left: 20%;
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 25%;
+}
+#btn2{
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 25%;
+    margin-left: 20%;
+}

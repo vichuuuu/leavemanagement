@@ -1,0 +1,50 @@
+.login{
+    width:420px;
+    /* background: #fff; */
+    background: lightcyan;
+    border: 1px solid #dddfe2;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 4%;
+    padding: 3%;
+    padding: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+input{
+    border-radius: 8px;
+    border: 2px solid #dddfe2; 
+    width:100%; 
+    margin-top: 6%;
+  
+    
+}
+.button{
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    color: #fff;
+    outline: none;
+     border-radius: 8px;
+     margin-top: 8%;
+}
+/* .parent{
+    height: 343px;
+    width: 700px;
+    border-radius: 10px;
+    background-color: #1877f2;
+    margin-left: 27%;
+   position: relative;
+   padding: .22%;
+   margin-top: 6%;
+
+} */
+.container{
+    background-image: url("../assets/homebg.jpg");
+    background-size: cover;
+    height: 700px !important;
+    width: 100%;
+    padding-top: 5%;
+    margin-top: 3%;
+}

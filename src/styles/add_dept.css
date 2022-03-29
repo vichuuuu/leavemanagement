@@ -1,0 +1,18 @@
+.department{
+    height: 300px;
+    width:420px ;
+    margin-top: -43%;
+    margin-left: 38%;
+    background-color: lightsteelblue;
+    padding:4%;
+    
+}
+#department_add_btn{
+    width: 150px;
+    margin-top: 18%;
+    border-radius: 1rem;
+
+}
+body{
+    background-color:lightgrey;
+}

@@ -1,9 +1,13 @@
 .add{
-    height: 500px;
+    height: 650px;
     width:500px;
     border-style: solid;
-    border-color: blue;
+    border-color:blue;
     margin-left: 35%;
-    margin-top: -38%;
+    margin-top: -48%;
+    background-color: wheat;
 
+}
+nav{
+    padding: 4%;
 }

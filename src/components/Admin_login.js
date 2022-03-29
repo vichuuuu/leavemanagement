@@ -35,7 +35,7 @@ function Admin_login() {
     }
   }
   return (
-    <div className='container' style={{ backgroundColor: "red" }}>
+    <div className='container' >
       <div className='login'>
         {console.log("USER", admin)}
         <h2>ADMIN</h2>

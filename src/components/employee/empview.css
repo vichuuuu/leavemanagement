@@ -1,0 +1,17 @@
+h5{
+    color: brown;
+}
+#employeeid{
+    margin-left: 9%;
+    margin-top: 12%;
+    width: 200px;
+}
+#view_btn{
+    margin-left: 11%;
+    margin-top: 6%;
+    border-radius: 1rem;
+    width: 126px;
+}
+/* body{
+    background-color: cadetblue;
+} */

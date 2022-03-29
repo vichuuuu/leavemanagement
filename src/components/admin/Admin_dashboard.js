@@ -33,18 +33,21 @@ function Admin_dashboard() {
       <div className='sidebar'>
         <h2>MENU</h2>
         <h4>Employee</h4>
-        {/* <a href='view'>view</a><br></br>
-        <a href='add'>add</a><br></br>
-        <a href='edit'>edit</a> */}
+       
         <button className='btn1' >view</button>
         <button className='btn2' onClick={() => {
           navigate("/user")
         }}> add</button>
         <button className='btn3' >edit</button>
+        <button className='btn3' onClick={()=>{
+          navigate("/deleteuser")
+        }} >delete</button>
 
 
         <h4>Department</h4>
-        <button className='btn1' >view</button>
+        <button className='btn1' onClick={()=>{
+          navigate("/view_department")
+        }}>view</button>
         <button className='btn1' onClick={() => {
           navigate("/ad_dept")
         }} >add</button>
@@ -54,9 +57,6 @@ function Admin_dashboard() {
         <button className='btn1' >application</button>
         
       </div>
-
-
-
     </div>
 
   )

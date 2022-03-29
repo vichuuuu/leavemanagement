@@ -6,29 +6,36 @@ body{
     width:224px;
     border-style:groove;
     margin-left: 1%;
-    border-color: blue;
+    border-color: black;
+    /* background-color: cadetblue; */
+    background-color: lightsteelblue;
 }
 .btn1{
-    border-radius: 8rem;
+    border-radius: 3rem;
     margin-top: 2%;
     width: 150px;
-    border-color: brown;
+    background-color:lightsteelblue;
+    
+   border-color:indigo; 
+    
 }
 .btn2{
     border-radius: 8rem;
     margin-top: 4%;
     width: 150px;
-    border-color: brown;
+    border-color:indigo;
+    background-color:lightsteelblue;
 }
 .btn3{
     border-radius: 8rem;
     margin-top: 6%;
     width: 150px;
-    border-color: brown;
+    border-color:indigo;
+    background-color:lightsteelblue;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
-    color: blue;
+    color:blue;
 }
 h6{
     color: white;
@@ -39,11 +46,11 @@ h6{
     border-radius: 2rem;
     margin-top: 7%;
     width: 120px;
-    border-color: brown;
-}
+     /* border-color: brown; */
+} 
 input{
     border-style:solid;
-    border-color: brown;
+     /* border-color: brown;  */
 }
 h4{
     margin-top: 20%;

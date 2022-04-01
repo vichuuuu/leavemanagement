@@ -1,5 +1,5 @@
 .box1{
-    background-image: url("../assets/homebg.jpg");
+    background-image: url("../assets/Organization.webp");
     /* background-image: url("../assets/home_bg_pic.webp"); */
     height:900px;
     background-size: cover;
@@ -16,10 +16,17 @@
     width: 200px;
     border-radius: 8px;
     margin-top: 25%;
+    background-color: indigo;
+    color: blanchedalmond;
 }
 #btn2{
     width: 200px;
     border-radius: 8px;
     margin-top: 25%;
     margin-left: 20%;
+    background-color: indigo;
+    color: blanchedalmond;
+}
+h1{
+    color: blanchedalmond;
 }

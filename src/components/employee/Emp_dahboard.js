@@ -36,7 +36,7 @@ function Emp_dahboard() {
         <h4 id="menu">MENU</h4>
         <button className='button1' onClick={()=>{navigate("/empview")}}> VIEW</button>
         <button className='button2' onClick={()=>{navigate("/empedit")}}>EDIT</button>
-        <button className='button3'>LEAVE LIST</button>
+        <button className='button3' onClick={()=>{navigate("/leavelist")}} >LEAVE LIST</button>
         <button className='button4' onClick={()=>{navigate("/leaveform")}}>LEAVE REQUEST</button>
       </div>
     </div>

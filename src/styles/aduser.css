@@ -1,11 +1,11 @@
 .add{
-    height: 650px;
+    height: 700px;
     width:500px;
     border-style: solid;
     border-color:blue;
     margin-left: 35%;
-    margin-top: -48%;
-    background-color: wheat;
+    margin-top: -46%;
+    background-color: lightsteelblue;
 
 }
 nav{

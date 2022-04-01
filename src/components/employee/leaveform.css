@@ -2,15 +2,16 @@ h3{
     color:indigo;
 }
 .leave{
-    height: 450px;
+    height: 400px;
     width: 450px;
     margin-left: 42%;
     margin-top: -41%;
-    background-color: lightgray;
+    background-color:rgb(220, 201, 233);
 }
 #leave_btn{
     width: 200px;
     margin-top: 7%;
     border-radius: 2rem;
-    border-color: indigo;
+    background-color: indigo;
+    color: blanchedalmond;
 }

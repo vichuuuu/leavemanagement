@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Add_dept from './components/Add_dept';
-
 import Admin_dashboard from './components/admin/Admin_dashboard';
 import Admin_login from './components/Admin_login';
 import Emp_dahboard from './components/employee/Emp_dahboard';
@@ -13,6 +12,12 @@ import Useradd from './components/Useradd';
 import Emp_edit from './components/employee/Emp_edit';
 import Deleteuser from './components/Deleteuser'
 import View_department from './components/View_department';
+import Viewall from './components/Viewall';
+import Admin_edit from './components/Admin_edit'
+import Leavelist from './components/employee/Leavelist';
+import Admin_leavehandling from './components/Admin_leavehandling';
+
+
 
 
 function App() {
@@ -33,7 +38,14 @@ function App() {
      <Route path="/empedit" element={<Emp_edit/>} />
      <Route path="/deleteuser" element={<Deleteuser/>} />
      <Route path="/view_department" element={<View_department/>} />
-   
+     <Route path="/viewall" element={<Viewall/>} />
+     <Route path="/edituser" element={<Admin_edit/>} />
+     <Route path="/leavelist" element={<Leavelist/>} />
+     <Route path="/applications" element={<Admin_leavehandling/>} />
+  
+     
+    
+    
    
      </Routes>
      </Router>

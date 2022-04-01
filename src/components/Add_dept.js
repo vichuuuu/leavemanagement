@@ -26,7 +26,7 @@ function Add_dept() {
             //  .then(res=>console.log((res)))
             
         }else{
-            alert("invalid form")
+            alert("invalid form ...Please fill all the field")
         }
         
         }

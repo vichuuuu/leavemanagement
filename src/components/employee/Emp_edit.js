@@ -8,7 +8,7 @@ function Emp_edit() {
 
   const [user, setUser] = useState({
     username:"",
-     age:"",
+     mobile_number:"",
      email:"",
      emp_id:""
   })
@@ -19,13 +19,14 @@ function Emp_edit() {
       [name]: value
     })
   }
-  const update =  () => {
+  const update = async () => {
     
-    const { username, age,email,emp_id } = user
+     const { username, mobile_number,email,emp_id } = user
     
 
     axios.put("http://localhost:4000/editmydetails",user)
-    .then(res=> console.log(res))
+    // .then(res=> console.log(res))
+    .then(res=> alert(res.data.message))
     
   
   }
@@ -34,10 +35,10 @@ function Emp_edit() {
     <div>
       <Emp_dahboard/>
 <div className='editfields'>
-      <p>EDIT YOUR DETAILS</p>
+      <h3>Edit your details</h3>
         <input type="text" name='username' value={user.username} placeholder='enter name'onChange={handleChange}></input>
-        <input type="Number"  name='age' value={user.age} placeholder='enter age' onChange={handleChange}></input>
-        <input type="text"  name='email' value={user.email} placeholder='enter email id' onChange={handleChange}></input>
+        <input type="Number"  name='mobile_number' value={user.mobile_number} placeholder='enter new contact number' onChange={handleChange}></input>
+        <input type="text"  name='email' value={user.email} placeholder='enter  new email id' onChange={handleChange}></input>
         <input type="Number"  name='emp_id' value={user.emp_id} placeholder='enter emp id' onChange={handleChange}></input>
         <div className='edit_button'onClick={update} >UPDATE</div>
 

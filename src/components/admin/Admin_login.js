@@ -24,16 +24,18 @@ function Admin_login() {
   const login = async (e) => {
     const { username, password } = admin
     e.preventDefault()
-    if(username=="admin"){
-    const res = await axios.post("http://localhost:4000/login", admin)
-    .then(res=> alert(res.data.message))
-    navigate("/dashboard")
+    i
+      if(username=="admin"){
+        const res = await axios.post("http://localhost:4000/login", admin)
+        .then(res=> alert(res.data.message))
+        navigate("/dashboard")
+        }
+      
+        else{
+          alert("only admin can login")
+        }
     }
    
-    else{
-      alert("only admin can login")
-    }
-  }
   return (
     <div className='container' style={{backgroundColor:"red"}}>
       <div className='login'>

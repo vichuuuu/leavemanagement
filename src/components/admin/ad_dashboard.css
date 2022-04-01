@@ -7,31 +7,33 @@ body{
     border-style:groove;
     margin-left: 1%;
     border-color: black;
-    /* background-color: cadetblue; */
     background-color: lightsteelblue;
 }
 .btn1{
     border-radius: 3rem;
     margin-top: 2%;
-    width: 150px;
+    width:150px;
     background-color:lightsteelblue;
-    
-   border-color:indigo; 
-    
+    color: indigo;
+    border-color:indigo; 
+    margin-left: 2%; 
 }
 .btn2{
     border-radius: 8rem;
     margin-top: 4%;
     width: 150px;
-    border-color:indigo;
+    border-color:indigo; 
     background-color:lightsteelblue;
-}
+    color: indigo;
+    
+} 
 .btn3{
     border-radius: 8rem;
     margin-top: 6%;
     width: 150px;
-    border-color:indigo;
+     border-color:indigo; 
     background-color:lightsteelblue;
+    color: indigo;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;

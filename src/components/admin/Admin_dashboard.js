@@ -7,7 +7,7 @@ function Admin_dashboard() {
   let navigate = useNavigate()
   return (
     <div >
-      <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary  ">
         <div style={{ display: 'flex', flexDirection: "row", justifyContent: "space-between", flex: 1 }}>
           <a class="navbar-brand text-light" href="#">Leave Management</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,27 +34,35 @@ function Admin_dashboard() {
         <h2>MENU</h2>
         <h4>Employee</h4>
        
-        <button className='btn1' >view</button>
+         
+         <button className='btn1' onClick={()=>{
+          navigate("/viewall")
+        }} >VIEW</button>
+         
         <button className='btn2' onClick={() => {
           navigate("/user")
-        }}> add</button>
-        <button className='btn3' >edit</button>
+        }}> ADD</button>
+        <button className='btn3' onClick={() => {
+          navigate("/edituser")
+        }} >EDIT</button>
         <button className='btn3' onClick={()=>{
           navigate("/deleteuser")
-        }} >delete</button>
+        }} >DELETE</button>
 
 
         <h4>Department</h4>
         <button className='btn1' onClick={()=>{
           navigate("/view_department")
-        }}>view</button>
+        }}>VIEW</button>
         <button className='btn1' onClick={() => {
           navigate("/ad_dept")
-        }} >add</button>
-        <button className='btn1' >edit</button>
+        }} >ADD</button>
+        <button className='btn1' >EDIT</button>
 
-        <h4>Leave</h4>
-        <button className='btn1' >application</button>
+        <h4>LEAVE</h4>
+        <button className='btn1' onClick={() => {
+          navigate("/applications")
+        }} >APPLICATIONS</button>
         
       </div>
     </div>

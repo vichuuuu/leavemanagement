@@ -15,7 +15,8 @@ function Useradd() {
     password:"",
     category:"",
     designation:"",
-    mobile_number:""
+    mobile_number:"",
+    department:""
 
 
   })
@@ -30,15 +31,15 @@ function Useradd() {
 
 
   const Add= ()=>{
-    const {username,date_of_birth, age,email,emp_id,password,category,designation,mobile_number}=user
+    const {username,date_of_birth, age,email,emp_id,password,category,designation,mobile_number,department}=user
     // e.preventDefault()
-    if(username && date_of_birth && age && email && emp_id && password && category && designation && mobile_number){
+    if(username && date_of_birth && age && email && emp_id && password && category && designation && mobile_number &&department){
        axios.post("http://localhost:4000/adduser",user)
          .then(res=>alert(res.data.message))
         //  .then(res=>console.log((res)))
         
     }else{
-        alert("invalid form")
+        alert("invalid form...Please fill all the field")
     }
     
     
@@ -61,6 +62,7 @@ function Useradd() {
         <input type="text"  name='category' value={user.category} placeholder='enter category' onChange={handleChange}></input> 
         <input type="text"  name='designation' value={user.designation} placeholder='enter designation' onChange={handleChange}></input> 
         <input type="text"  name='mobile_number' value={user.mobile_number} placeholder='enter contact number' onChange={handleChange}></input> 
+        <input type="text"  name='department' value={user.department} placeholder='enter department name' onChange={handleChange}></input> 
         <br></br>
         <button  id="add-btn" type="submit" onClick={Add}>ADD</button>
       </div> 

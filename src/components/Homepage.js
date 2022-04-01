@@ -9,7 +9,7 @@ function Homepage() {
 
 
     <div className='box1'>
-      <h2>Leave Management System</h2>
+      <h1>Leave Management System</h1>
      
       <div className='box2'>
         <button id='btn1'

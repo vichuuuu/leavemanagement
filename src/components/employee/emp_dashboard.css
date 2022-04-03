@@ -47,3 +47,8 @@ svg{
     height: 40px;
     color: white;
 }
+#heading{
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}

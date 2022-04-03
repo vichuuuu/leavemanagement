@@ -3,7 +3,7 @@ import axios from 'axios'
 import '../styles/viewall.css'
 
 function Viewall() {
-
+    
     axios.post('http://localhost:4000/viewall')
     .then(res=>(view(res)))
 

@@ -20,11 +20,12 @@ function Emp_edit() {
     })
   }
   const update = async () => {
+    const tokens = (localStorage.getItem('token'))
     
      const { username, mobile_number,email,emp_id } = user
     
 
-    axios.put("http://localhost:4000/editmydetails",user)
+    axios.put("http://localhost:4000/editmydetails",user,{ headers: { 'x-access-token': `${tokens}` } })
     // .then(res=> console.log(res))
     .then(res=> alert(res.data.message))
     

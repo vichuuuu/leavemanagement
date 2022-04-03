@@ -26,7 +26,12 @@ function Admin_login() {
     e.preventDefault()
     if (username == "admin") {
       const res = await axios.post("http://localhost:4000/login", admin)
-        .then(res => alert(res.data.message))
+         alert(res.data.message)
+
+        localStorage.setItem("token", res.data.token)
+        localStorage.setItem("username", JSON.stringify(admin.username))
+        localStorage.setItem("password", JSON.stringify(admin.password))
+
       navigate("/dashboard")
     }
 

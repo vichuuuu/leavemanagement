@@ -46,16 +46,17 @@ function Admin_leavehandling() {
     }
 
     const Approve = () => {
-        
-        axios.post('http://localhost:4000/leaveapproval',data)
+        const tokens = (localStorage.getItem('token'))
+        axios.post('http://localhost:4000/leaveapproval',data,{ headers: { 'x-access-token': `${tokens}` } })
         .then(res => {
             alert(res.data.message)
         })
 
     }
     const Reject = () => {
-        
-        axios.post('http://localhost:4000/leaverejection',data).then(res => {
+        const tokens = (localStorage.getItem('token'))
+        axios.post('http://localhost:4000/leaverejection',data,{ headers: { 'x-access-token': `${tokens}` } })
+        .then(res => {
             alert(res.data.message)
         })
 

@@ -21,10 +21,13 @@ function Leaveform() {
   }
 
   const Request = async () => {
+    // const username = JSON.parse(localStorage.getItem("username"))
+    //     const password = JSON.parse(localStorage.getItem("password"))
+     const tokens = (localStorage.getItem('token'))
     const { emp_id, from_date, to_date, days, reason } = data
 
     if (emp_id && from_date && to_date && days && reason) {
-      axios.post("http://localhost:4000/leaverequest", data)
+      axios.post("http://localhost:4000/leaverequest", data,{ headers: { 'x-access-token': `${tokens}` } })
         .then(res => alert(res.data.message))
       // .then(res=>console.log((res)))
 

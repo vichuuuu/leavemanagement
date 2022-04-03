@@ -4,12 +4,19 @@ import { useNavigate } from 'react-router-dom'
 
 function Admin_dashboard() {
 
+function logout() {
+    localStorage.removeItem("username")
+    localStorage.removeItem("password")
+    localStorage.removeItem("token")
+    navigate("/")
+  }
+
   let navigate = useNavigate()
   return (
     <div >
       <nav class="navbar navbar-expand-lg navbar-light bg-primary  ">
         <div style={{ display: 'flex', flexDirection: "row", justifyContent: "space-between", flex: 1 }}>
-          <a class="navbar-brand text-light" href="#">Leave Management</a>
+          <a class="navbar-brand text-light" href="#" id='heading'>Leave Management</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,14 +31,14 @@ function Admin_dashboard() {
 
             </ul>
 
-            <h6>admin panel</h6>
-            <button class="btn btn-outline-light text-light" type="submit">Logout</button>
+            <h6>Admin panel</h6>
+            <button class="btn btn-outline-light text-light" type="submit" onClick={logout}>Logout</button>
 
           </div>
         </div>
       </nav>
       <div className='sidebar'>
-        <h2>MENU</h2>
+        <h4>MENU</h4>
         <h4>Employee</h4>
        
          
@@ -59,10 +66,10 @@ function Admin_dashboard() {
         }} >ADD</button>
         <button className='btn1' >EDIT</button>
 
-        <h4>LEAVE</h4>
+        <h4>Leave</h4>
         <button className='btn1' onClick={() => {
           navigate("/applications")
-        }} >APPLICATIONS</button>
+        }} > VIEW REQUESTS</button>
         
       </div>
     </div>

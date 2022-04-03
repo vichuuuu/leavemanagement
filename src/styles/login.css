@@ -29,22 +29,13 @@ input{
      border-radius: 8px;
      margin-top: 8%;
 }
-/* .parent{
-    height: 343px;
-    width: 700px;
-    border-radius: 10px;
-    background-color: #1877f2;
-    margin-left: 27%;
-   position: relative;
-   padding: .22%;
-   margin-top: 6%;
 
-} */
 .container{
-    background-image: url("../assets/homebg.jpg");
+    /* background-image: url("../assets/homebg.jpg"); */
+    background-image: url("../assets/Organization.webp");
     background-size: cover;
-    height: 700px !important;
+    height: 600px;
     width: 100%;
     padding-top: 5%;
-    margin-top: 3%;
+    margin-top: 5%;
 }

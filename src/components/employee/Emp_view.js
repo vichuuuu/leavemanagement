@@ -19,8 +19,10 @@ function Emp_view() {
     }
 
     const mydata = async () => {
-        axios.post("http://localhost:4000/mydetails", empid)
-            .then(data => displayValue(data))
+        const tokens = (localStorage.getItem('token'))
+        axios.post("http://localhost:4000/mydetails", empid,{ headers: { 'x-access-token': `${tokens}` } })
+             .then(data => displayValue(data))
+            
     }
 
     function displayValue(res) {

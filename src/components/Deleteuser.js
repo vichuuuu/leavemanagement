@@ -24,7 +24,7 @@ function Deleteuser() {
     
     e.preventDefault()
     
-      const res = await axios.post("http://localhost:4000/delete/:emp_id", emp_id)
+      const res = await axios.post("http://localhost:4000/delete", emp_id)
          .then(res => alert(res.data))
         .then(res=>console.log(res))
         navigate("/emp_login")

@@ -31,10 +31,11 @@ function Useradd() {
 
 
   const Add= ()=>{
+    const tokens = (localStorage.getItem('token'))
     const {username,date_of_birth, age,email,emp_id,password,category,designation,mobile_number,department}=user
     // e.preventDefault()
     if(username && date_of_birth && age && email && emp_id && password && category && designation && mobile_number &&department){
-       axios.post("http://localhost:4000/adduser",user)
+       axios.post("http://localhost:4000/adduser",user,{ headers: { 'x-access-token': `${tokens}` } })
          .then(res=>alert(res.data.message))
         //  .then(res=>console.log((res)))
         
